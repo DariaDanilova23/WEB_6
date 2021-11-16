@@ -1,0 +1,39 @@
+%head
+  %title Danilova Daria's website
+  %link{:href => "pics_scss.css", :rel => "stylesheet"}/
+%body{:bgcolor => "#000000"}
+  %h1{:align => "center"} Danilova Daria's website
+  .menu
+    %ul
+      %li
+        %a{:href => ""} Main page
+      %li
+        %a{:href => ""} About me
+      %li
+        %a{:href => ""} My hobbies
+      %li
+        %a{:href => ""} Study
+      %li.on
+        %a{:href => ""} Photoalbum
+      %li
+        %a{:href => ""} Contancts
+      %li
+        %a{:href => ""} Test
+      %li
+        %a{:href => ""} History
+  %h1{:align => "center"} Photos
+  .wall
+    -@picsArr=['nicki minaj','beyonce','riri','kehlani','sza','aaliyah','ariana grande','bella hadid','dua lipa','flo milli','halsey','irina shayk','rico','saweetie','selena gomez','zendaya'];
+    -@picsArr.each do |key|
+      %img{:src => "#{key}.jpg"}
+  .lightbox
+    .overlay
+    %figure
+      %span.prev prev
+      %span.next next
+      %img{:src => "#"}/
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"}
+  %script{:src => "pics.js", :type => "text/javascript"}
+  %br/
+  %br/
+  %br/

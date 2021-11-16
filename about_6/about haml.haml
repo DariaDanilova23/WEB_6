@@ -1,0 +1,41 @@
+%head
+  %title Danilova Daria's website
+  %link{:href => "about_scss.css", :rel => "stylesheet"}/
+%body{:bgcolor => "#000000"}
+  %h1{:align => "center", :style => "color:#ffffff"}
+    %font{:face => "Book Antiqua"} Danilova Daria's website
+  %nav
+    %ul
+      %li
+        %a{:href => ""} Main page
+      %li.on
+        %a{:href => ""} About me
+      %li
+        %a{:href => ""} My hobbies
+      %li
+        %a{:href => ""} Study
+      %li
+        %a{:href => ""} Photoalbum
+      %li
+        %a{:href => ""} Contancts
+      %li
+        %a{:href => ""} Test
+      %li
+        %a{:href => ""} History
+  .info
+    %h2
+      %img{:align => "left", :height => "320", :src => "Me.jpg", :width => "180"}/
+      My name is Danilova Daria Dmitrieva.
+      %br/
+      I was born on 23rd of December 2001
+    %h4
+      %br/
+      The only thing that doesn't piss me off is my dog Miranda.
+      %br/
+      You can see here in the picture on the left.
+  .container
+    %a.link{:href => "#"} More of my doggy
+    .linc2
+      %img{:src => "Mira.jpg"}/
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"}
+  %script{:src => "about.js"}
